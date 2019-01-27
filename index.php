@@ -20,6 +20,7 @@
 <?php require_once('footer.php');  ?>
 
 <script type="text/javascript">
+
 // var a = 10;
 // var name = "Test User 1";
 // var obj = {'id':1,'name':'test user 2'};
@@ -28,44 +29,223 @@
 // console.log(obj);
 
 /* Variable operators */
-var a = 10;
-var b = 12; 
-var c = 25;
-var result1 = a+b+c;
-var result2 = a-b-c;
-var result3 = a*b*c;
-var result4 = a/b;
-console.log(result1);
-console.log(result2);
-console.log(result3);
-document.write(result3);
+// var a = 10;
+// var b = 12; 
+// var c = 25;
+// var result1 = a+b+c;
+// var result2 = a-b-c;
+// var result3 = a*b*c;
+// var result4 = a/b;
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
+// document.write(result3);
 
-document.write(result4);
+// document.write(result4);
 
-/* string concatenation */
+// /* string concatenation */
 
-var fname = "test";
-var lname = "User";
+// var fname = "test";
+// var lname = "User";
 
-// var name = fname+' '+lname;
+// // var name = fname+' '+lname;
 
-var name = `${fname} ${lname}`;
+// var name = `${fname} ${lname}`;
 
-console.log(name);
+// console.log(name);
 
-var marks = 60;
+// var marks = 60;
 
-if (marks >= 33){
+// if (marks >= 33){
 
-console.log("pass");
-}
-else
+// console.log("pass");
+// }
+// else
+// {
+// console.log("fail");
+
+// }
+
+// // Class 17
+
+// var num = 76;
+
+// if (num >= 33 && num <=39)
+// {
+// 	console.log("pass");
+
+// }
+
+// else if (num >= 40 && num <=49)
+// {
+// 	console.log("pass");
+
+// }
+// else if (num >= 50 && num <=59)
+// {
+// 	console.log("pass");
+
+// }
+// else if (num >= 60 && num <=69)
+// {
+// 	console.log("pass");
+
+// }
+// else if (num >= 70 && num <=79)
+// {
+// 	console.log("pass");
+
+// }
+
+// else if (num >= 80 && num <=100)
+// {
+// 	console.log("pass");
+
+// }
+// else if (num <= 0 && num >=100)
+// {
+// 	console.log("Invalid number");
+
+// }
+
+// else (num >= 0 && num < 33)
+// {
+// 	console.log("Fail");
+
+// }
+
+
+//  Class 18 Switch and Loop 
+
+// console.log("Welcome To ABC Bank");
+
+// console.log("Select your desired options from below menu:");
+
+// console.log("1. Inquiry");
+
+// console.log("2. With-drawl");
+
+// console.log("3. Transfer");
+
+// console.log("4. Exit");
+
+// var opt = 7;
+
+// switch (opt)
+// {
+
+// case 1:
+// console.log("You selected opt1, Please wait we are processing your inquiry request");
+// break;
+// case 2:
+// console.log("You selected opt2, Please wait we are processing your with drawl request");
+// break;
+// case 3:
+// console.log("You selected opt3, Please wait we are processing your with Transfer request");
+// break;
+// case 4:
+// console.log("You selected opt4, Exiting from main menu");
+// break;
+// default:
+// console.log("Invalid entry, please select options from the menu only");
+
+// }
+
+// var table = 2;
+//  for (var i=1 ; i <= 10; i++) 
+//  {
+//   	console.log(table + 'x' + i + '=' + table*i);
+//  }
+
+
+// for (var i = 10; i >= 1; i--) 
+// {
+// 	console.log("decremented no. is", i);
+// }
+
+// console.log("Following are Even numbers");
+// var a=0;
+
+// while (a<=10)
+// {
+// 	if(a%2==0)
+
+// console.log("Even no is", a);
+// a++;
+// }
+
+// console.log("Following are odd numbers");
+// var a=0;
+// while (a<=10)
+// {
+// 	if(a%2!=0)
+
+// console.log("Odd no is", a);
+// a++;
+// }
+
+// console.log("Following are prime numbers");
+// var a=1;
+// while (a<=50)
+// {
+// 	if(a%a==0)
+// console.log("Prime no is", a);
+// a++;
+// }  
+
+function sub()
 {
-console.log("fail");
+var a=10;
+var b=2;
+var sub=a-b;
+console.log(sub);
 
 }
 
+function add()
+{
+var a=10;
+var b=2;
+var add=a+b;
+console.log(add);
 
+}
+
+function mul()
+{
+var a=10;
+var b=2;
+var mul=a*b;
+console.log(mul);
+
+}
+function div()
+{
+var a=10;
+var b=2;
+var div=a/b;
+console.log(div);
+}
+
+
+var opt = 1;
+switch(opt)
+{
+case add:
+add();
+break;
+case sub:
+sub();
+break;
+case mul:
+mul();
+break;
+case div:
+div();
+break;
+default:
+console.log("Invalid input");
+}
 
 
 </script>

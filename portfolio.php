@@ -6,10 +6,12 @@
 
 <!-- slider start -->
 
-<?php require_once('slider.php');  ?>
+
 <!-- slider End -->
 
 <!-- Footer start -->
 
 <?php require_once('footer.php');  ?>
 <!-- Footer End -->
+
+

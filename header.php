@@ -87,7 +87,7 @@
 		<li class="nav-item">
 				<a href="index.php" class="nav-link">Home</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item ">
 				<a href="aboutus.php" class="nav-link">About Us</a>
 			</li>
 			<li class="nav-item">

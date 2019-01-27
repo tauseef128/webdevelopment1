@@ -9,7 +9,7 @@
  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 company-portion">
  	<h5>
 <span class="company-name"></span>
- 		Company Name tst</h5>
+ 		Company Name test</h5>
  	<p>Company Data Dummy Info, Company Data Dummy Info </p>
  </div>
 
