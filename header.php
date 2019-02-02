@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Apple Inc.</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.min.css">

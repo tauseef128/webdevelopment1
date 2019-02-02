@@ -193,60 +193,96 @@
 // a++;
 // }  
 
-function sub()
+// function sub()
+// {
+// var a=10;
+// var b=2;
+// var sub=a-b;
+// console.log(sub);
+
+// }
+
+// function add()
+// {
+// var a=10;
+// var b=2;
+// var add=a+b;
+// console.log(add);
+
+// }
+
+// function mul()
+// {
+// var a=10;
+// var b=2;
+// var mul=a*b;
+// console.log(mul);
+
+// }
+// function div()
+// {
+// var a=10;
+// var b=2;
+// var div=a/b;
+// console.log(div);
+// }
+
+
+// var opt = 1;
+// switch(opt)
+// {
+// case add:
+// add();
+// break;
+// case sub:
+// sub();
+// break;
+// case mul:
+// mul();
+// break;
+// case div:
+// div();
+// break;
+// default:
+// console.log("Invalid input");
+// }
+
+// function add(a,b)
+// {
+
+// 	var sum = a / b;
+// 	console.log(sum);
+// }
+
+// add(10,50);
+
+// function add(a=1,b=2)
+// {
+
+// 	var sum = a + b;
+// 	console.log(sum);
+// }
+
+// add(8);
+// // it will take 2nd by default and replace with 1st variable so answer will be 8
+
+var fruits = ['Apple','Orange','Mangoes','Banana','Grapes']
+
+// console.log(fruits[2]);
+
+// console.log(fruits.length-1);
+
+// for (var i=0 ; i < fruits.length; i++) {
+// 	console.log(fruits[i]);
+// }
+
+var i =0;
+while(i < fruits.length)
+
 {
-var a=10;
-var b=2;
-var sub=a-b;
-console.log(sub);
-
+console.log(fruits[i]);
+i++;
 }
-
-function add()
-{
-var a=10;
-var b=2;
-var add=a+b;
-console.log(add);
-
-}
-
-function mul()
-{
-var a=10;
-var b=2;
-var mul=a*b;
-console.log(mul);
-
-}
-function div()
-{
-var a=10;
-var b=2;
-var div=a/b;
-console.log(div);
-}
-
-
-var opt = 1;
-switch(opt)
-{
-case add:
-add();
-break;
-case sub:
-sub();
-break;
-case mul:
-mul();
-break;
-case div:
-div();
-break;
-default:
-console.log("Invalid input");
-}
-
 
 </script>
 
