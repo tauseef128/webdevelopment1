@@ -12,12 +12,19 @@
 
 <!-- slider start -->
 
-<?php require_once('slider.php');  ?>
+<!-- <?php require_once('slider.php');  ?> -->
 <!-- slider End -->
+
+<label id="email-label"> Email</label> 
+<input class="form-control test" type="text" name="test" id="test" value="">
+<button class="btn btn-primary submit"> Submit</button>
 
 <!-- Footer start -->
 
 <?php require_once('footer.php');  ?>
+
+
+
 
 <script type="text/javascript">
 
@@ -266,7 +273,7 @@
 // add(8);
 // // it will take 2nd by default and replace with 1st variable so answer will be 8
 
-var fruits = ['Apple','Orange','Mangoes','Banana','Grapes']
+// var fruits = ['Apple','Orange','Mangoes','Banana','Grapes']
 
 // console.log(fruits[2]);
 
@@ -276,13 +283,30 @@ var fruits = ['Apple','Orange','Mangoes','Banana','Grapes']
 // 	console.log(fruits[i]);
 // }
 
-var i =0;
-while(i < fruits.length)
+// var i =0;
+// while(i < fruits.length)
 
-{
-console.log(fruits[i]);
-i++;
-}
+// {
+// console.log(fruits[i]);
+// i++;
+// }
+
+
+//  Setting attribute and value
+
+	$(document).ready(function(){
+ 		$('.submit').click(function(){
+	var value = $('.test').attr('name1','test2');
+	// Remove an attribute
+	  $('.test').removeAttr('id');
+	console.log(value);
+
+ 		});
+    });
+	
+
+
+
 
 </script>
 
