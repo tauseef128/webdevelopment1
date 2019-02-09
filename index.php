@@ -15,11 +15,19 @@
 <!-- <?php require_once('slider.php');  ?> -->
 <!-- slider End -->
 
-<label id="email-label"> Email</label> 
-<input class="form-control test" type="text" name="test" id="test" value="">
-<button class="btn btn-primary submit"> Submit</button>
+<label> Email</label> 
+<input class="form-control test" type="text" name="test" id="email" value="">
+<span class="email-error" style="display: none; color: red">Email is required</span>
+<br>
+<label>Password</label> 
+<input class="form-control test" type="password" name="test" id="password" value="">
+<span class="password-error" style="display: none; color: red">Password is required</span>
+<br>
+<button class="btn btn-primary submit" id="test3"> Submit</button>
 
 <!-- Footer start -->
+
+
 
 <?php require_once('footer.php');  ?>
 
@@ -294,17 +302,42 @@
 
 //  Setting attribute and value
 
+	// $(document).ready(function(){
+ // 		$('.submit').click(function(){
+	// var value = $('.test2').attr('name1','test2');
+	// // Remove an attribute
+	//   $('.test').removeAttr('id');
+	// console.log(value);
+
+ // 		});
+ //    });
+	
+// $(document).ready(function(){
+//  		$('.submit').click(function(){
+// 	 $(this).text('Submitted');
+// 	 		});
+//     });
+
+
 	$(document).ready(function(){
  		$('.submit').click(function(){
-	var value = $('.test').attr('name1','test2');
-	// Remove an attribute
-	  $('.test').removeAttr('id');
-	console.log(value);
+ 			$(this).text('Submitting');
+			var email = $('#email').val();
+			var password = $('#password').val();
+			if (email.length <  1) {
+				$('.email-error').show(1000);
+			}else {
+				$('.email-error').hide(1000);
+			} 
 
- 		});
+			if (password.length < 1){
+				$('.password-error').show(1000);
+			}else {
+				$('.password-error').hide(1000);
+			}
+			
+		});
     });
-	
-
 
 
 
