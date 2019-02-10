@@ -319,25 +319,25 @@
 //     });
 
 
-	$(document).ready(function(){
- 		$('.submit').click(function(){
- 			$(this).text('Submitting');
-			var email = $('#email').val();
-			var password = $('#password').val();
-			if (email.length <  1) {
-				$('.email-error').show(1000);
-			}else {
-				$('.email-error').hide(1000);
-			} 
+	// $(document).ready(function(){
+ // 		$('.submit').click(function(){
+ // 			$(this).text('Submitting');
+	// 		var email = $('#email').val();
+	// 		var password = $('#password').val();
+	// 		if (email.length <  1) {
+	// 			$('.email-error').show(1000);
+	// 		}else {
+	// 			$('.email-error').hide(1000);
+	// 		} 
 
-			if (password.length < 1){
-				$('.password-error').show(1000);
-			}else {
-				$('.password-error').hide(1000);
-			}
+	// 		if (password.length < 1){
+	// 			$('.password-error').show(1000);
+	// 		}else {
+	// 			$('.password-error').hide(1000);
+	// 		}
 			
-		});
-    });
+	// 	});
+ //    });
 
 
 

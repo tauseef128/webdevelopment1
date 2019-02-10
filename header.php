@@ -102,14 +102,26 @@
 			</li>
 			
 			</ul>
-			<ul class="navbar-nav justify-content-end w-100">
+	<!-- 		<ul class="navbar-nav justify-content-end w-100">
 		<li class="nav-item">
-				<a href="#" class="nav-link" data-toggle="modal" data-target="#SignUp" data-backdrop="static" keyboard="false"><i class="fas fa-user-plus"></i>SignUp</a>
+				<a href="#signup.php" class="nav-link" data-toggle="modal" data-target="#SignUp" data-backdrop="static" keyboard="false"><i class="fas fa-user-plus"></i>SignUp</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link" data-toggle="modal" data-target="#Login" data-backdrop="static" keyboard="false"><i class="fas fa-sign-in-alt"></i>Login</a>
+				<a href="#login.php" class="nav-link" data-toggle="modal" data-target="#Login" data-backdrop="static" keyboard="false"><i class="fas fa-sign-in-alt"></i>Login</a>
+			</li>
+		</ul> -->
+
+<ul class="navbar-nav justify-content-end w-100">
+		<li class="nav-item">
+				<a href="signup.php" class="nav-link"><i class="fas fa-user-plus"></i>SignUp</a>
+			</li>
+			<li class="nav-item">
+				<a href="login.php" class="nav-link"><i class="fas fa-sign-in-alt"></i>Login</a>
 			</li>
 		</ul>
+
+
+
 </div>
 
 
