@@ -19,7 +19,7 @@
 					<h4 class="login-heading"> Sign Up </h4>
 					<div class="form-group">
 						<label>User Name</label>
-						<input class="form-control" type="text" name="name">
+						<input class="form-control" type="text" id="username" name="name">
 						<span class="user-error">User Name is required</span>
 					</div>
 
@@ -37,11 +37,12 @@
 
 					<div class="form-group">
 						<label>Confirm Password</label>
-						<input class="form-control" type="password" id="confirm_password" name="confirm_password">
+						<input class="form-control" type="password" id="confirm-password" name="confirm-password">
 						<span class="confirm-password-error">Please Enter password as above</span>
 					</div>
+					<br>
 					<div class="form-group">
-						<button class="btn btn-success btn-block login-submit float-left"> Submit</button>
+						<button class="btn btn-success btn-block login-submit float-left">Submit</button>
 					</div>
 				</div>
 			</div>
@@ -54,6 +55,7 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('.login-submit').click(function(){
+					var username = $('#username').val();
 					var email = $('#email').val();
 					var password = $('#password').val();
 					if(email == ''){
@@ -73,6 +75,24 @@
 						$('.password-error').hide();
 						$('#password').removeClass('error');
 						$('#password').addClass('success');
+					}
+					if(username == ''){
+						$('.user-error').show(500);
+						$('#username').addClass('error');
+						$('#username').removeClass('success');
+					}else{
+						$('.user-error').hide();
+						$('#username').removeClass('error');
+						$('#username').addClass('success');
+					}
+					if(confirm-password == ''){
+						$('.confirm-password-error').show(500);
+						$('#confirm-password').addClass('error');
+						$('#confirm-password').removeClass('success');
+					}else{
+						$('.confirm-password-error').hide();
+						$('#confirm-password').removeClass('success');
+						$('#confirm-password').addClass('error');
 					}
 				});
 

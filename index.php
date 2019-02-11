@@ -12,10 +12,10 @@
 
 <!-- slider start -->
 
-<!-- <?php require_once('slider.php');  ?> -->
+ <?php require_once('slider.php');  ?> 
 <!-- slider End -->
 
-<label> Email</label> 
+<!-- <label> Email</label> 
 <input class="form-control test" type="text" name="test" id="email" value="">
 <span class="email-error" style="display: none; color: red">Email is required</span>
 <br>
@@ -23,7 +23,7 @@
 <input class="form-control test" type="password" name="test" id="password" value="">
 <span class="password-error" style="display: none; color: red">Password is required</span>
 <br>
-<button class="btn btn-primary submit" id="test3"> Submit</button>
+<button class="btn btn-primary submit" id="test3"> Submit</button> -->
 
 <!-- Footer start -->
 
