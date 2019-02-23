@@ -41,6 +41,7 @@
 						<span class="confirm-password-error">Please Enter password as above</span>
 					</div>
 					<br>
+					<br>
 					<div class="form-group">
 						<button class="btn btn-success btn-block login-submit float-left">Submit</button>
 					</div>
@@ -58,6 +59,7 @@
 					var username = $('#username').val();
 					var email = $('#email').val();
 					var password = $('#password').val();
+					var confirmpassword = $('#confirm-password').val();
 					if(email == ''){
 						$('.email-error').show(500);
 						$('#email').addClass('error');
@@ -85,14 +87,14 @@
 						$('#username').removeClass('error');
 						$('#username').addClass('success');
 					}
-					if(confirm-password == ''){
+					if(confirmpassword == ''){
 						$('.confirm-password-error').show(500);
 						$('#confirm-password').addClass('error');
 						$('#confirm-password').removeClass('success');
 					}else{
 						$('.confirm-password-error').hide();
-						$('#confirm-password').removeClass('success');
-						$('#confirm-password').addClass('error');
+						$('#confirm-password').removeClass('error');
+						$('#confirm-password').addClass('success');
 					}
 				});
 
@@ -111,4 +113,6 @@
 			});
 		</script>
 </body>
+
+
 </html>

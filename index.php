@@ -28,6 +28,91 @@
 <!-- Footer start -->
 
 
+<?php 
+
+ // $table=10;
+
+//  for ($i=1; $i <=10 ; $i++) { 
+// echo $table.'x'.$i.'='.$table*$i."<br>"; 
+
+// }
+
+// $i=1;
+//  $table=10;
+// while ($i <=10) {
+// 	echo $table.'x'.$i.'='.$table*$i."<br>";
+// 	$i++;
+// }
+
+// $i=1;
+//  $table=2;
+// Do {
+// 	echo $table.'x'.$i.'='.$table*$i."<br>";
+// 	$i++;
+// }
+// while ($i <=12)
+
+
+// for($i=1;  $i <= 5; $i++)  { 
+	
+
+// 	for ($j=1; $j <= $i ; $j++) { 
+
+//  echo $i;
+
+// 	}
+
+// echo "<br>";
+
+// }
+//  -----------------------------
+// for($i=1;  $i <= 5; $i++)  { 
+	
+
+// 	for ($j=1; $j <= $i ; $j++) { 
+
+//  echo $j;
+
+// 	}
+
+// echo "<br>";
+
+// }
+//  -----------------------
+// for($i=5;  $i >= 1; $i--)  { 
+	
+
+// 	for ($j=1; $j <= $i ; $j++) { 
+
+//  echo $i;
+
+// 	}
+
+// echo "<br>";
+
+// }
+
+for($i=1;  $i <= 9; $i++)  { 
+	
+
+	for ($j=1; $j <= $i ; $j++) { 
+
+ echo $i;
+
+	}
+
+echo "<br>";
+
+}
+
+
+
+
+
+ ?>
+
+
+
 
 <?php require_once('footer.php');  ?>
 
@@ -344,4 +429,6 @@
 </script>
 
 	</body>
+
 </html>
+
