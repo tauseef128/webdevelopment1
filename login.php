@@ -28,7 +28,7 @@
 						<span class="password-error">Password is required</span>
 					</div>
 					<div class="form-group">
-						<button class="btn btn-success btn-block login-submit float-left"> Submit</button>
+						<button class="btn btn-success btn-block login-submit float-left">Submit</button>
 					</div>
 				</div>
 			</div>
