@@ -1,5 +1,5 @@
 <?php
-		require_once 'connection.php';
+		require_once '../connection.php';
 
 		if(isset($_POST['login_submit'])){
 			$email    = $_POST['email'];

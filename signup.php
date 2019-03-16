@@ -17,6 +17,7 @@
 			<div class="row">
 				<div class="offset-md-4 col-md-4">
 					<h4 class="login-heading"> Sign Up </h4>
+					<form action="logic.php" method="POST">
 					<div class="form-group">
 						<label>User Name</label>
 						<input class="form-control" type="text" id="username" name="name">
@@ -43,8 +44,9 @@
 					<br>
 					<br>
 					<div class="form-group">
-						<button class="btn btn-success btn-block login-submit float-left">Submit</button>
+						<button name="signup_submit" class="btn btn-success btn-block login-submit float-left">Submit</button>
 					</div>
+				</form>
 				</div>
 			</div>
 		</div>
