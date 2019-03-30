@@ -1,6 +1,6 @@
     <?php 
     require_once 'session.php';
-        $data['view'] = 'dashboard.php';
+        
         require_once 'top-header.php';
         require_once 'header.php';
     ?>
@@ -10,7 +10,7 @@
             require_once 'sidebar.php';
             
             // current file content 
-            require_once $data['view'] ; 
+            require_once 'dashboard.php' ; 
         ?>
             
         </div>

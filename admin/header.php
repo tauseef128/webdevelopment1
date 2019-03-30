@@ -1,6 +1,5 @@
 <header class="header">
-            <a href="index.html" class="logo">
-                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            <a href="<?php echo $_GLOBAL['base_url']?>index.php" class="logo">
                 Medical Equipment
             </a>
             <!-- Header Navbar: style can be found in header.less -->
@@ -207,31 +206,24 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
                                 <span>
-                                    <?php
+                             <?php
 
                             if( isset($_SESSION['user_id']) &&  isset($_SESSION['name']) && $_SESSION['role_id'] == 1) {
                                     echo $_SESSION['name'];
                             }
-                            ?>
-
-                                 <i class="caret"></i></span>
+                            ?> <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <?php
-
-                            if( isset($_SESSION['user_id']) &&  isset($_SESSION['name']) && $_SESSION['role_id'] == 1) {
-                                    echo $_SESSION['name'];
-                            }
-                            ?>
+                                <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                          <?php
+                                        <?php
 
                             if( isset($_SESSION['user_id']) &&  isset($_SESSION['name']) && $_SESSION['role_id'] == 1) {
                                     echo $_SESSION['name'];
                             }
-                            ?>
+                            ?> 
                                     </p>
                                 </li>
                                 <!-- Menu Body -->
@@ -260,4 +252,4 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+</header>

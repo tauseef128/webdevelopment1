@@ -8,13 +8,13 @@
                         </div>
                         <div class="pull-left info">
                             <p>
-                                <?php
+                            <?php
 
                             if( isset($_SESSION['user_id']) &&  isset($_SESSION['name']) && $_SESSION['role_id'] == 1) {
                                     echo $_SESSION['name'];
                             }
                             ?>
-
+                                
                             </p>
 
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
@@ -37,21 +37,42 @@
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="pages/widgets.html">
-                                <i class="fa fa-th"></i> <span>Widgets</span> <small class="badge pull-right bg-green">new</small>
-                            </a>
-                        </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-bar-chart-o"></i>
-                                <span>Charts</span>
+                                <i class="fa fa-th"></i> 
+                                <span>Category</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Morris</a></li>
-                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Flot</a></li>
-                                <li><a href="pages/charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
+                                <li>
+                                    <a href="<?php echo $_SESSION['base_url']?>category/list.php">
+                                        <i class="fa fa-list"></i> List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo $_SESSION['base_url']?>category/add.php">
+                                        <i class="fa fa-plus"></i>Add
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-th"></i> 
+                                <span>Product</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="pages/charts/morris.html">
+                                        <i class="fa fa-list"></i> List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="pages/charts/inline.html">
+                                        <i class="fa fa-plus"></i>Add
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="treeview">
