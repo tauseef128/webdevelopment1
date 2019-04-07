@@ -28,7 +28,28 @@
 			}
 		}
 
-		
+		if(isset($_POST['category_submit'])){	
+		$name    = $_POST['name'];
+		$description = $_POST['description'];
+			
+		$query = "INSERT into  category (name,description,created_at) values('".$name."', '".$description."','".date('Y-m-d')."')";
+		if($conn->query($query) === true){
+			$_SESSION['success'] = true;
+			$_SESSION['error'] = false;
+			$_SESSION['message'] = "Record inserted successfully";
+
+			
+		}else{
+			$_SESSION['success'] = false;
+			$_SESSION['error'] = true;
+			if($conn->error){
+				$_SESSION['message'] = $conn->error;
+			}else{
+				$_SESSION['message'] =  "something went wrong";
+			}
+		}
+		header('location: category-add.php');
+	}
 
 
 ?>

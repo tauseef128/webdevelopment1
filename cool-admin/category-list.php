@@ -1,5 +1,8 @@
- <?php  require_once 'session.php' ; ?>
- <?php  require_once 'top-header.php' ; ?>
+<?php 
+	require_once '../connection.php';
+ 	require_once 'session.php' ;
+	require_once 'top-header.php' ;
+ ?>
 
 <?php require_once 'sidebar.php'?>
             <!-- END HEADER DESKTOP-->
@@ -20,91 +23,59 @@
 		                <table class="table table-borderless " id="dtBasicExample">
 		                    <thead>
 		                        <tr>
-		                            <th>date</th>
-		                            <th>type</th>
-		                            <th>description</th>
+		                            <th>S.NO</th>
+		                            <th>Name</th>
+		                            <th>Description</th>
 		                            <th>status</th>
-		                            <th>price</th>
+		                            <th>Deleted</th>
+		                            <th>Action</th>
 		                        </tr>
 		                    </thead>
 		                    <tbody>
-		                        <tr>
-		                            <td>2018-09-29 05:57</td>
-		                            <td>Mobile</td>
-		                            <td>iPhone X 64Gb Grey</td>
-		                            <td class="process">Processed</td>
-		                            <td>$999.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-28 01:22</td>
-		                            <td>Mobile</td>
-		                            <td>Samsung S8 Black</td>
-		                            <td class="process">Processed</td>
-		                            <td>$756.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-27 02:12</td>
-		                            <td>Game</td>
-		                            <td>Game Console Controller</td>
-		                            <td class="denied">Denied</td>
-		                            <td>$22.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-29 05:57</td>
-		                            <td>Mobile</td>
-		                            <td>iPhone X 64Gb Grey</td>
-		                            <td class="process">Processed</td>
-		                            <td>$999.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-28 01:22</td>
-		                            <td>Mobile</td>
-		                            <td>Samsung S8 Black</td>
-		                            <td class="process">Processed</td>
-		                            <td>$756.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-27 02:12</td>
-		                            <td>Game</td>
-		                            <td>Game Console Controller</td>
-		                            <td class="denied">Denied</td>
-		                            <td>$22.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-26 23:06</td>
-		                            <td>Mobile</td>
-		                            <td>iPhone X 256Gb Black</td>
-		                            <td class="denied">Denied</td>
-		                            <td>$1199.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-25 19:03</td>
-		                            <td>Accessories</td>
-		                            <td>USB 3.0 Cable</td>
-		                            <td class="process">Processed</td>
-		                            <td>$10.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-29 05:57</td>
-		                            <td>Accesories</td>
-		                            <td>Smartwatch 4.0 LTE Wifi</td>
-		                            <td class="denied">Denied</td>
-		                            <td>$199.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-24 19:10</td>
-		                            <td>Camera</td>
-		                            <td>Camera C430W 4k</td>
-		                            <td class="process">Processed</td>
-		                            <td>$699.00</td>
-		                        </tr>
-		                        <tr>
-		                            <td>2018-09-22 00:43</td>
-		                            <td>Computer</td>
-		                            <td>Macbook Pro Retina 2017</td>
-		                            <td class="process">Processed</td>
-		                            <td>$10.00</td>
-		                        </tr>
+		                       <?php 
+		                       	$query = "SELECT * from categories ";
+								$result = $conn->query($query);
+								if($result->num_rows > 0){
+									$categories = $result->fetch_all();
+									foreach ($categories as $key => $value) {
+									?>
+										<tr>
+											<td>
+												<?php echo $key + 1 ?>	
+											</td>
+											<td>
+												<?php echo $value[1] ?>	
+											</td>
+											<td>
+												<?php echo $value[2] ?>	
+											</td>
+											<td>
+												<?php echo $value[3] ? '<span class="label label-success"> Active </span>' : '<span class="label label-danger"> InActive </span>';
+												 ?>	
+											</td>
+											<td>
+												<?php 
+													echo $value[4] ? '<span class="label label-danger"> Deleted </span>' : '<span class="label label-success"> Not Deleted </span>';
+												?>
+											</td>
+											<td>
+												<button class="btn btn-sm btn-primary">
+													<i class="fa fa-edit"></i> Edit
+													
+												</button>
+												<button class="btn btn-sm btn-danger">
+													 <i class="fa fa-trash"></i>  Delete
+													
+												</button>
+												
+											</td>
+										</tr>
+									<?php 
+									}
+								}else{
+									echo "in else";
+								}
+		                       ?>
 		                    </tbody>
 		                </table>
 		            </div>

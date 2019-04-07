@@ -6,6 +6,7 @@
             <!-- END HEADER DESKTOP-->
 
 <div class="main-content">
+    <?php require_once 'success-error-alert.php' ?>
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="row">
@@ -17,14 +18,16 @@
                               <i class="fas fa-arrow-left"> </i>   Back
                             </a>
                         </div>
+                         <form action="logic.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+
                         <div class="card-body card-block">
-                            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                           
                                 <div class="row form-group">
                                     <div class="col col-md-3">
                                         <label for="text-input" class=" form-control-label">Name</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
+                                        <input type="text" id="text-input" name="name" placeholder="Text" class="form-control">
                                         <small class="form-text text-muted">This is a help text</small>
                                     </div>
                                 </div>
@@ -33,7 +36,7 @@
                                         <label for="textarea-input" class=" form-control-label">Description</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea>
+                                        <textarea name="description" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -44,16 +47,17 @@
                                         <input type="file" id="file-multiple-input" name="file-multiple-input[]" multiple="" class="form-control-file">
                                     </div>
                                 </div>
-                            </form>
+                           
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary btn-md right-button">
+                            <button type="submit" class="btn btn-primary btn-md right-button" name="category_submit">
                                 <i class="fa fa-dot-circle-o"></i> <b>Submit</b>
                             </button>
                             <button type="reset" class="btn btn-danger btn-md right-button">
                                 <i class="fa fa-ban"></i>  <b>Reset</b>
                             </button>
                         </div>
+                         </form>
                     </div>
                 </div>
             </div>
